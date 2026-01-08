@@ -1,0 +1,16 @@
+architectury {
+    common("fabric")
+}
+
+dependencies {
+    // Cobblemon
+    modApi "com.cobblemon:mod:${rootProject.cobblemon_version}"
+
+    // RCT API (para PokemonModel, BagItemModel, JTO, etc.)
+    modCompileOnly "curse.maven:rctapi-1152792:7248222"
+
+    // RCT Mod (para TrainerTeam, TrainerMobData, etc.)
+    modCompileOnly "curse.maven:rctmod-1009534:7279673"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib:1.9.24"
+}
+
